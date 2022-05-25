@@ -2,17 +2,21 @@ package com.bridgelabz.addressbookapp.Model;
 
 import com.bridgelabz.addressbookapp.DTO.AddressBookDTO;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 
 public class AddressBookData {
-    private int id ;
+    private int Id ;
     private String name ;
     private long phonenumber;
 
+AtomicLong counter = new AtomicLong();
 
 
-    public AddressBookData(int id ,AddressBookDTO addressBookDTO)
+
+    public AddressBookData( int Id,AddressBookDTO addressBookDTO)
     {
-        this.id = id;
+        this.Id = Id;
 
         this.name = addressBookDTO.getname() ;
 
@@ -21,11 +25,11 @@ public class AddressBookData {
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.Id = Id;
     }
 
     public String getName() {

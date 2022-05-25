@@ -4,7 +4,7 @@ public class AddressBookDTO {
     private String name ;
     private long phonenumber;
 
-    public AddressBookDTO(String name , long phonenumber)
+    public AddressBookDTO(AddressBookDTO addressBookDTO)
     {
         this.name = name;
         this.phonenumber = phonenumber;
